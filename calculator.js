@@ -59,8 +59,6 @@ function calculate() {
 keysContainer.addEventListener("click", function (event) {
   const target = event.target;
   const keyValue = target.textContent;
-
-  if (target.matches("button")) {
     switch (keyValue) {
       case "AC":
         clear();
@@ -80,4 +78,4 @@ keysContainer.addEventListener("click", function (event) {
         break;
     }
   }
-});
+);
