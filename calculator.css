@@ -1,5 +1,6 @@
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background: #bcbec0;
 }
 
 .container {
@@ -9,8 +10,21 @@ body {
   color: #f1f3f6;
   margin: 0 auto;
 }
-
+.containerWhite {
+  background: #F1F3F6;
+  width: 375px;
+  height: 667px;
+  color: #f1f3f6;
+  margin: 0 auto;
+}
+.displayNone{
+  display: none;
+}
+.displayShow{
+  display: block;
+}
 img {
+  display: block;
   padding-top: 15px;
   padding-left: 310px;
   padding-right: 15px;
@@ -28,6 +42,18 @@ img {
   justify-content: center;
   align-items: center;
 }
+.rectangle1White {
+  width: 335px;
+  height: 116px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #F1F3F6;
+  box-shadow:-5px -5px 10px 0px #FFF; 
+  margin-left: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .rectangle2 {
   width: 313px;
@@ -35,18 +61,19 @@ img {
   position: absolute;
   border-radius: 10px;
   border: 2px solid #1565c0;
+  overflow: hidden;
 }
 
 #defaultNum,
 #newNum {
   position: absolute;
-  text-align: center;
+  text-align: right;
   margin-top: 30px;
   font-size: 38px;
   font-weight: 400;
   letter-spacing: 0.1em;
-  color: #f1f3f6;
-}
+  color: #1565c0;
+} 
 
 #defaultNum {
   padding-left: 55px;
@@ -54,7 +81,9 @@ img {
 }
 
 #newNum {
-  padding-left: 170px;
+  width: 200px;
+  padding-left: 100px;
+  overflow: hidden;
 }
 
 .keys {
@@ -71,11 +100,7 @@ img {
   display: flex;
   justify-content: space-between;
 }
-
-#ac,
-#zero,
-#equal,
-#signButtons {
+.blackbtns{
   width: 72px;
   height: 66px;
   flex-shrink: 0;
@@ -85,12 +110,36 @@ img {
   font-size: 30px;
   box-shadow: 5px 5px 10px 0px rgba(20, 21, 24, 0.1), 5px 5px 10px 0px #000;
 }
-
-#zero {
-  width: 160px;
-  color: #f1f3f6;
+.whitebtns{
+  width: 72px;
+  height: 66px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  color: #0c0c0c;
+  font-size: 30px;
+  border-color: white;
+  background: #F1F3F6;
+  box-shadow: -5px -5px 10px 0px #FFF;
 }
+/* #ac,
+#zero,
+#equal,
+#signButtons {
+  width: 72px;
+  height: 66px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  color: #0c0c0c;
+  font-size: 30px;
+  border-color: white;
+  background: #F1F3F6;
+  box-shadow: -5px -5px 10px 0px #FFF;
+}  */
 
+ #zero {
+  width: 160px;
+  /* color: #f1f3f6; */
+}
 #equal {
   background: #1565c0;
 }
@@ -99,3 +148,42 @@ img {
   border: 1px solid #1565c0;
   color: #1565C0;
 }
+/*................................. white theme..................................................................... */
+
+/* #defaultNum,
+#newNum {
+  position: absolute;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 38px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: #d14d10;
+} */
+ /* #ac,
+#zero,
+#equal,
+#signButtons {
+  width: 72px;
+  height: 66px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  color: #0c0c0c;
+  font-size: 30px;
+  border-radius: 15px;
+  border-color: white;
+  background: #F1F3F6;
+  box-shadow: -5px -5px 10px 0px #FFF;
+} 
+ #zero {
+  width: 160px;
+  color: #111111;
+}  */
+/* #equal {
+  background: #1565c0;
+}
+
+#signButtons {
+  border: 1px solid #1565c0;
+  color: #1565C0;
+} */

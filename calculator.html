@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="calculator.css" />
   </head>
   <body>
-    <div class="container">
-      <img src="Mode (Dark).svg" />
-
-      <div class="rectangle1">
+     <div class="container" id="containerId">
+      <img id="darkModeIcon" src="Mode (Dark).svg" />
+      <img id="whiteModeIcon" src="Mode (Light).svg" style="display: none;"/>
+      <div class="rectangle1" id="rectangle1Id">
         <div class="rectangle2">
           <p id="defaultNum">888888888</p>
           <p1 id="newNum"></p1>
@@ -18,37 +18,36 @@
       </div>
       <div class="keys">
         <div class="row">
-          <button ref="acF" id="ac">AC</button>
-          <button id="ac">$</button>
-          <button id="ac">%</button>
-          <button id="signButtons">/</button>
+          <button class="blackbtns" id="ac">AC</button>
+          <button class="blackbtns" id="ac">$</button>
+          <button class="blackbtns" id="ac">%</button>
+          <button class="blackbtns" id="signButtons">/</button>
         </div>
         <div class="row">
-          <button id="ac">7</button>
-          <button id="ac">8</button>
-          <button id="ac">9</button>
-          <button id="signButtons">x</button>
+          <button class="blackbtns" id="ac">7</button>
+          <button class="blackbtns" id="ac">8</button>
+          <button class="blackbtns" id="ac">9</button>
+          <button class="blackbtns" id="signButtons">x</button>
         </div>
         <div class="row">
-          <button id="ac">4</button>
-          <button id="ac">5</button>
-          <button id="ac">6</button>
-          <button id="signButtons">-</button>
+          <button class="blackbtns" id="ac">4</button>
+          <button class="blackbtns" id="ac">5</button>
+          <button class="blackbtns" id="ac">6</button>
+          <button class="blackbtns" id="signButtons">-</button>
         </div>
         <div class="row">
-          <button id="ac">3</button>
-          <button id="ac">2</button>
-          <button id="ac">1</button>
-          <button id="signButtons">+</button>
+          <button class="blackbtns" id="ac">3</button>
+          <button class="blackbtns" id="ac">2</button>
+          <button class="blackbtns" id="ac">1</button>
+          <button class="blackbtns" id="signButtons">+</button>
         </div>
         <div class="row">
-          <button id="zero">0</button>
-          <button id="ac">.</button>
-          <button id="equal">=</button>
+          <button class="blackbtns" id="zero">0</button>
+          <button class="blackbtns" id="ac">.</button>
+          <button class="blackbtns" id="equal">=</button>
         </div>
       </div>
-    </div>
-
+    </div> 
     <script src="calculator.js"></script>
   </body>
 </html>
