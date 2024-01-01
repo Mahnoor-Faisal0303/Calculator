@@ -86,7 +86,11 @@ function calculate() {
     case "/":
       if (num2 !== 0) {
         currentNumber = (num1 / num2);
-      } else {
+      } 
+      else if(num1==0 && num2==0){
+        currentNumber = 0;
+      }
+      else {
         currentNumber = "Error";
       }
     default:
