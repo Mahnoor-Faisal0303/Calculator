@@ -30,20 +30,20 @@ function calculate() {
 
   switch (operator) {
     case "%":
-      currentNumber = (num1 * (num2 / 100)).toString();
+      currentNumber = (num1 * (num2 / 100));
       break;
     case "+":
-      currentNumber = (num1 + num2).toString();
+      currentNumber = (num1 + num2);
       break;
     case "-":
-      currentNumber = (num1 - num2).toString();
+      currentNumber = (num1 - num2);
       break;
     case "x":
-      currentNumber = (num1 * num2).toString();
+      currentNumber = (num1 * num2);
       break;
     case "/":
       if (num2 !== 0) {
-        currentNumber = (num1 / num2).toString();
+        currentNumber = (num1 / num2);
       } else {
         currentNumber = "Error";
       }
